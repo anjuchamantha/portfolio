@@ -218,6 +218,39 @@ header .header-gallery {
     display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+
+    header nav ul li a {
+        line-height: 60px;
+    }
+
+    header .header-gallery {
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #111;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+
 /* INDEX */
 .index-banner {
     width: 100%;
@@ -260,6 +293,7 @@ header .header-gallery {
     font-style: italic;
     line-height: 40px;
     color: #fff;
+    opacity: 0.9;
     text-align: center;
     text-shadow: 2px 2px 64px #111;
     padding: 10px;
@@ -280,6 +314,39 @@ header .header-gallery {
     color: #111;
     text-align: center;
     /* text-transform: uppercase; */
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner {
+        height: calc(100vh - 100px);
+        background-position: center;
+    }
+    .index-banner h1 {
+        display: block;
+        width: 600px;
+        margin: 0 auto;
+    }
+    .index-links {
+        overflow: hidden;
+    }
+    .index-links div {
+        margin: 20px 10px 0;
+        height: 230px;
+        float: left;
+    }
+    .index-boxlink-square {
+        width: calc(25% - 20px) !important;
+    }
+    .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+    }
+    .index-links div h3 {
+        line-height: 230px;
+    }
 }
 
 /* FOOTER */
@@ -328,6 +395,23 @@ footer ul li a {
     color: #111;
 }
 
+.footer-contact {
+    display: none;
+}
+
 a:hover {
     opacity: 0.8;
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer-contact {
+        display: block;
+        font-family: Catamaran;
+        font-size: 24px;
+        color: #fff;
+        line-height: 40px;
+    }
+    footer ul {
+        padding-right: 100px;
+    }
 }
