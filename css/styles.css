@@ -327,3 +327,7 @@ footer ul li a {
     background: #fff;
     color: #111;
 }
+
+a:hover {
+    opacity: 0.8;
+}
