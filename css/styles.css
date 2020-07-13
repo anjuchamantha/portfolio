@@ -404,6 +404,9 @@ a:hover {
 }
 
 @media only screen and (min-width: 1000px) {
+    .footer-social {
+        margin-right: 40px;
+    }
     .footer-contact {
         display: block;
         font-family: Catamaran;
