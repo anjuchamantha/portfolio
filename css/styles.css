@@ -281,3 +281,49 @@ header .header-gallery {
     text-align: center;
     /* text-transform: uppercase; */
 }
+
+/* FOOTER */
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: -block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footer-social {
+    width: 50px;
+    float: right;
+}
+
+.footer-social .fa {
+    margin-bottom: 10px;
+
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+}
