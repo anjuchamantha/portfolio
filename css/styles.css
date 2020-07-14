@@ -382,6 +382,16 @@ header .header-gallery {
     line-height: 40px;
     text-align: center;
 }
+
+span {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: rgba(17, 17, 17, 0.651);
+    line-height: 20px;
+    display: block;
+    text-align: center;
+}
+
 .gallery-item {
     padding-bottom: 50px;
 }
@@ -405,10 +415,20 @@ header .header-gallery {
 }
 @media only screen and (min-width: 1000px) {
     .gallery-items h3 {
-        padding-left: 10px;
+        padding: 0px 20px 0px 10px;
         font-size: 26px;
         line-height: 40px;
         text-align: left;
+    }
+    span {
+        border-left: 3px solid rgba(17, 17, 17, 0.651);
+        padding-left: 10px;
+        margin: 0px 0px 0px 20px;
+        text-align: right;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        /* float: right; */
     }
     .gallery-item {
         height: 500px;
@@ -424,6 +444,9 @@ header .header-gallery {
     }
     .index-boxlink-square {
         width: calc(25% - 20px) !important;
+    }
+    .index-boxlink-square.portrait img {
+        object-fit: contain !important;
     }
     .index-boxlink-rectangle {
         width: calc(50% - 20px) !important;
