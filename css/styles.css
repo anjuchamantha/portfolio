@@ -447,6 +447,7 @@ span {
     }
     .index-boxlink-square.portrait img {
         object-fit: contain !important;
+        background-color: #111;
     }
     .index-boxlink-rectangle {
         width: calc(50% - 20px) !important;
