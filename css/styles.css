@@ -377,7 +377,7 @@ header .header-gallery {
 .gallery-items div {
     margin: 16px 16px 0;
     width: calc(100% - 32px);
-    height: 100px;
+    /* height: 100px; */
     background-color: #f2f2f2;
 }
 
