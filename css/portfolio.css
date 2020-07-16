@@ -46,13 +46,14 @@
     position: absolute;
     /* top: auto; */
     bottom: 0px;
-    opacity: 0.8;
+    opacity: 0.85;
     transition: opacity 0.5s ease;
 
     font-family: Catamaran;
     font-size: 14px;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 3px;
     text-align: left;
     font-weight: 100;
 }
@@ -62,6 +63,7 @@
     width: 100%;
     object-fit: cover;
     z-index: 1;
+    transition: transform 0.5s ease;
 }
 
 .item .fa {
@@ -76,7 +78,7 @@
         text-align: left;
     }
     .item h3 span {
-        margin: 0px 0px 0px 20px;
+        margin: 0px 0px 0px 10px;
         text-align: right;
         line-height: 24px;
         display: inline-block;
@@ -87,13 +89,17 @@
     .overlay {
         opacity: 0;
         transition: opacity 0.5s ease;
-        font-size: 28px;
+
+        font-size: 20px;
+        padding: 20px;
+        margin-bottom: 0px;
     }
     .item-img:hover img {
         transform: scale(1.1);
         transition: transform 0.5s;
     }
     .item-img:hover .overlay {
-        opacity: 0.8;
+        opacity: 0.85;
+        transition: opacity 0.5s;
     }
 }

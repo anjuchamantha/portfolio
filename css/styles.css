@@ -460,6 +460,16 @@ span {
     .index-links div h3 {
         line-height: 230px;
     }
+    /* a div {
+        overflow: hidden;
+    } */
+    img {
+        transition: transform 0.5s;
+    }
+    a:hover img {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+    }
 }
 
 /* FOOTER */
@@ -515,7 +525,7 @@ footer ul li a {
     display: none;
 }
 
-a:hover {
+footer a:hover {
     opacity: 0.8;
 }
 
