@@ -16,9 +16,11 @@ function makeItem(item) {
     let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
     let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
     let name = "<h3>" + item.name + place + date + organizer + "</h3>"
+    let detail = "<div class=\"overlay\">" + item.detail + "</div>"
     let img = "<a href=\"" + item.img + "\">" +
         "<div class=\"item-img\" >" +
-        "<img src=\"" + item.img + "\">" +
+        "<img class=\"image\" src=\"" + item.img + "\">" +
+        detail +
         "</div ></a>"
     let section = "<section class=\"item\">" + name + img + "</section>"
     return section;
