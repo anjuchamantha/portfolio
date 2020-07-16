@@ -1,7 +1,7 @@
-function loadJSON(callback) {
+function loadJSON(filepath, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'data/achievements.json', true);
+    xobj.open('GET', filepath, true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -11,9 +11,29 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
-loadJSON(function (response) {
+function displayItem(item) {
+    let place = "<span title=\"Placement\">" + "<i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>" + item.place + "</span>"
+    let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
+    let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
+    let name = "<h3>" + item.name + place + date + organizer + "</h3>"
+    let img = "<a href=\"" + item.img + "\">" +
+        "<div class=\"item-img\" >" +
+        "<img src=\"" + item.img + "\">" +
+        "</div ></a>"
+
+    document.getElementById('content').innerHTML = name + img;
+}
+
+loadJSON('data/achievements.json', function (response) {
     // Parse JSON string into object
-    var actual_JSON = JSON.parse(response);
-    console.log(actual_JSON);
-    document.getElementById('education').innerHTML = actual_JSON[0].name;
+    var achievements = JSON.parse(response);
+    for (let i = 0; i < achievements.length; i++) {
+        const item = achievements[i];
+        displayItem(item);
+
+    }
+
+
 });
+
+
