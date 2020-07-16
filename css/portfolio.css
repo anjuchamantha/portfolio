@@ -1,4 +1,10 @@
-#content h3 {
+.item {
+    padding: 8px;
+    margin: 8px;
+    margin-bottom: 30px;
+    border: rgba(17, 17, 17, 0.041) solid 2px;
+}
+.item h3 {
     font-family: Catamaran;
     font-size: 22px;
     color: #111;
@@ -6,7 +12,7 @@
     padding-bottom: 20px;
 }
 
-#content h3 span {
+.item h3 span {
     font-family: Catamaran;
     font-size: 16px;
     color: rgba(17, 17, 17, 0.651);
@@ -18,39 +24,43 @@
 }
 
 #content {
-    padding: 16px 16px 50px 16px;
+    padding: 0px 0px 10px 0px;
 }
-#content .item-img {
+.item .item-img {
     /* margin: 16px 16px 0; */
     width: calc(100%);
     /* height: 100px; */
     background-color: #f2f2f2;
 }
 
-#content img {
+.item img {
     /* height: 100%; */
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 300px);
     width: 100%;
     object-fit: cover;
 }
 
-#content .fa {
+.item .fa {
     padding-right: 10px;
 }
 
 @media only screen and (min-width: 1000px) {
-    #content h3 {
-        padding: 0px 0px 20px 0px;
+    .item h3 {
+        padding: 10px 0px 20px 0px;
         font-size: 26px;
         line-height: 40px;
         text-align: left;
     }
-    #content h3 span {
+    .item h3 span {
         margin: 0px 0px 0px 20px;
         text-align: right;
         line-height: 24px;
         display: inline-block;
         vertical-align: middle;
         /* float: right; */
+    }
+
+    .item img {
+        max-height: calc(100vh - 200px);
     }
 }

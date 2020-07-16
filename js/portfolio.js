@@ -11,7 +11,7 @@ function loadJSON(filepath, callback) {
     xobj.send(null);
 }
 
-function displayItem(item) {
+function makeItem(item) {
     let place = "<span title=\"Placement\">" + "<i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>" + item.place + "</span>"
     let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
     let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
@@ -20,18 +20,22 @@ function displayItem(item) {
         "<div class=\"item-img\" >" +
         "<img src=\"" + item.img + "\">" +
         "</div ></a>"
+    let section = "<section class=\"item\">" + name + img + "</section>"
+    return section;
+}
 
-    document.getElementById('content').innerHTML = name + img;
+function displaySection(items) {
+    let sec = ""
+    for (let i = 0; i < items.length; i++) {
+        sec += makeItem(items[i]);
+    }
+    document.getElementById('content').innerHTML = sec;
 }
 
 loadJSON('data/achievements.json', function (response) {
     // Parse JSON string into object
     var achievements = JSON.parse(response);
-    for (let i = 0; i < achievements.length; i++) {
-        const item = achievements[i];
-        displayItem(item);
-
-    }
+    displaySection(achievements)
 
 
 });
