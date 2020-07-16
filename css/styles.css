@@ -377,7 +377,7 @@ header .header-gallery {
 /* GALLERY */
 .gallery-items h3 {
     font-family: Catamaran;
-    font-size: 22px;
+    font-size: 18px;
     color: #111;
     line-height: 40px;
     text-align: center;
@@ -387,7 +387,7 @@ span {
     font-family: Catamaran;
     font-size: 16px;
     color: rgba(17, 17, 17, 0.651);
-    line-height: 20px;
+    line-height: 14px;
     display: block;
     text-align: center;
 }
@@ -418,6 +418,9 @@ span {
     object-fit: cover;
     z-index: 1;
 }
+.gallery-item .fa {
+    padding-right: 10px;
+}
 @media only screen and (min-width: 1000px) {
     .gallery-items h3 {
         padding: 0px 20px 0px 10px;
@@ -430,6 +433,7 @@ span {
         padding-left: 10px;
         margin: 0px 0px 0px 20px;
         text-align: right;
+        font-size: 16px;
         line-height: 24px;
         display: inline-block;
         vertical-align: middle;
