@@ -24,11 +24,19 @@
         "detail": "This competition was held in Techno 2019 at BMICH. The competition was to develop a robot which can do the Tic-Tac-Toe game (2 robots of 2 teams playing with each other. Balls of 2 colors are there and a robot has to line up 3 balls of its color. If the game was a tie, the fastest robot wins.) We were able to place the 2nd in that competition."
     },
     {
-        "name": "RealHack Hackathon 2019 ",
+        "name": "RealHack Hackathon 2019",
         "img": "data/realhack/gallery/selfie1.jpg",
         "place": "Runners Up",
         "date": "Nov 2019",
         "organizer": "University of Kelaniya",
         "detail": "RealHack was a 24-hour hackathon, which the participant teams were given a problem to solve with a software solution. We developed a mobile application, which is a platform where anyone can ask questions and give answers. We were able to place the 2nd."
+    },
+    {
+        "name": "IESL Idea Challenge 2018",
+        "img": "data/ideachallenge/gallery/grp.jpg",
+        "place": "Runners Up",
+        "date": "Oct 2019",
+        "organizer": "Institute of Engineers Sri Lanka",
+        "detail": "Idea Challenge is a competition held in the annual exhibition ‘Techno’ at BMICH. This competition was to develop a software solution to prevent diseases. We developed a Dengue prevention app and managed to win 2nd place."
     }
 ]
