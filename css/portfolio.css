@@ -6,7 +6,7 @@
 }
 .item h3 {
     font-family: Catamaran;
-    font-size: 22px;
+    font-size: 18px;
     color: #111;
     line-height: 40px;
     padding-bottom: 20px;
@@ -14,7 +14,7 @@
 
 .item h3 span {
     font-family: Catamaran;
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(17, 17, 17, 0.651);
     line-height: 20px;
     display: block;
@@ -47,7 +47,7 @@
 @media only screen and (min-width: 1000px) {
     .item h3 {
         padding: 10px 0px 20px 0px;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 40px;
         text-align: left;
     }
