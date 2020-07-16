@@ -12,5 +12,19 @@
         "place": "Winners",
         "date": "Oct 2018",
         "organizer": "Institute of Engineers Sri Lanka"
+    },
+    {
+        "name": "XO-Bot Robot Competition 2019",
+        "img": "data/xobot/gallery/play.jpg",
+        "place": "Runners Up",
+        "date": "Oct 2019",
+        "organizer": "Institute of Engineers Sri Lanka"
+    },
+    {
+        "name": "RealHack Hackathon 2019 ",
+        "img": "data/realhack/gallery/selfie1.jpg",
+        "place": "Runners Up",
+        "date": "Nov 2019",
+        "organizer": "University of Kelaniya"
     }
 ]
