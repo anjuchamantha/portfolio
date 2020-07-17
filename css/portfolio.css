@@ -111,15 +111,15 @@
 .item-education {
     margin-bottom: 20px;
 }
-
 .tabContainer .buttonContainer {
     height: 35px;
     margin-bottom: 10px;
-    margin: 0px 8px 20px 8px;
+    padding: 0px 8px 10px 8px;
     position: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: calc(100vw - 16px);
-    /* top: 50; */
+    background-color: white;
+    z-index: 1000;
 }
 .tabContainer .buttonContainer button {
     width: 25%;
@@ -181,6 +181,10 @@
     padding-left: 25px;
     margin-bottom: 10px;
     font-weight: 400;
+}
+
+.tab-content {
+    padding-top: 50px;
 }
 
 @media only screen and (min-width: 1000px) {
