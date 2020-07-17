@@ -116,6 +116,10 @@
     height: 35px;
     margin-bottom: 10px;
     margin: 0px 8px 20px 8px;
+    position: fixed;
+    overflow: hidden;
+    width: calc(100vw - 16px);
+    /* top: 50; */
 }
 .tabContainer .buttonContainer button {
     width: 25%;
@@ -179,7 +183,10 @@
     font-weight: 400;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
+    .tabContainer .buttonContainer {
+        width: 984px;
+    }
     .item h3 {
         padding-top: 10px;
         padding-bottom: 10px;
