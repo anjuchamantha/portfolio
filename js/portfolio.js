@@ -37,7 +37,7 @@ function makeAchievementItem(item) {
     let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
     let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
     let name = "<h3>" + item.name + place + date + organizer + "</h3>"
-    let detail = "<div class=\"overlay\">" + "item.detail" + "</div>"
+    let detail = "<div class=\"overlay\">" + item.detail + "</div>"
     let img = "<a href=\"" + item.img + "\">" +
         "<div class=\"item-img\" >" +
         "<img class=\"image\" src=\"" + item.img + "\">" +
@@ -52,11 +52,13 @@ function makeEducationItem(item) {
     let programs = "";
     for (let i = 0; i < item.programs.length; i++) {
         const program = item.programs[i];
-        let program_li = "<li>" + program + "<span class=\"item-li-span\">" + item.grades[i] + "</span>" + "</li>";
+        let grade = "<span class=\"item-li-span\">" + item.grades[i] + "</span>";
+        let detail = "<div class=\"item-li-detail\">" + item.details[i] + "</div>";
+        let program_li = "<li>" + program + grade + detail + "</li>";
         programs += program_li;
     }
     let programs_div = "<div class=\"item-detail\"><ul>" + programs + "</ul></div>";
-    let section = "<section class=\"item\">" + name + programs_div + "</section>";
+    let section = "<section class=\"item item-education\">" + name + programs_div + "</section>";
     return section;
 }
 
