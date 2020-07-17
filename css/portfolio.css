@@ -8,7 +8,9 @@
     font-size: 18px;
     color: #111;
     line-height: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.116);
 }
 
 .item h3 span {
@@ -182,7 +184,6 @@
         padding-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 15px;
-        border-bottom: 1px solid rgba(17, 17, 17, 0.116);
     }
     .item-detail li {
         font-size: 16px;
