@@ -1,0 +1,75 @@
+[
+    {
+        "institute": "University of Moratuwa",
+        "date": "SEPT 2017 - PRESENT",
+        "programs": [
+            "B.Sc.(Computer Science Engineering)"
+        ],
+        "details": [
+            "3rd Year Undergraduate"
+        ],
+        "grades": [
+            "3.7 CGPA"
+        ]
+    },
+    {
+        "institute": "Sri Sumangala College",
+        "date": "2008 - 2016",
+        "programs": [
+            "Advanced Level (2016)",
+            "Ordinary Level (2013)"
+        ],
+        "details": [
+            "2A’s (Mathematics, Physics), 1B (Chemistry)",
+            "8A’s, 1B (English Literature)"
+        ],
+        "grades": [
+            "Z 1.9898",
+            ""
+        ]
+    },
+    {
+        "institute": "ESOFT Metro Campus",
+        "date": "2016",
+        "programs": [
+            "Diploma in IT",
+            "Python Programming Course"
+        ],
+        "details": [
+            "1 Year",
+            ""
+        ],
+        "grades": [
+            "",
+            ""
+        ]
+    },
+    {
+        "institute": "Other Courses & Certificates",
+        "date": "2019 - PRESENT",
+        "programs": [
+            "Full-stack web development with React",
+            "Introduction to Self-Driving Cars",
+            "Google Cloud Platform core infrastructure",
+            "Python Data Visualization",
+            "Networking Essentials",
+            "Introduction to packet tracer"
+        ],
+        "details": [
+            "Coursera | Hong Kong University",
+            "Coursera | University of Toronto",
+            "Coursera | Google Cloud",
+            "Coursera | Rice University",
+            "Cisco",
+            "Cisco"
+        ],
+        "grades": [
+            "Ongoing",
+            "June 2020",
+            "May 2020",
+            "May 2020",
+            "March 2020",
+            "Oct 2019"
+        ]
+    }
+]

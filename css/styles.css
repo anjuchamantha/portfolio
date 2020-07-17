@@ -193,7 +193,7 @@ body::after {
     height: 100px;
 }
 main {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 200px;
 }
 
@@ -204,8 +204,9 @@ header {
     right: 0;
     background-color: #fff;
     width: 100%;
-    height: 100px;
+    height: 80px;
     z-index: 500;
+    /* background-color: yellow; */
 }
 
 header .header-brand {
@@ -217,7 +218,8 @@ header .header-brand {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 0px;
+    padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 header nav ul {
@@ -245,7 +247,7 @@ header .header-gallery {
 
 @media only screen and (min-width: 1000px) {
     header .header-brand {
-        margin: 31px 0;
+        margin: 21px 0;
         text-align: left;
         line-height: 38px;
         padding: 0 20px 0 40px;
@@ -254,12 +256,12 @@ header .header-gallery {
     }
 
     header nav ul {
-        margin: 20px 0px 0px 20px;
+        margin: 21px 0px 0px 20px;
         float: left;
     }
 
     header nav ul li a {
-        line-height: 60px;
+        line-height: 40px;
     }
 
     header .header-gallery {
@@ -271,7 +273,7 @@ header .header-gallery {
         border: 1px solid #111;
         float: right;
         margin-right: 40px;
-        margin-top: 30px;
+        margin-top: 21px;
         padding: 0 20px;
     }
 }
@@ -279,7 +281,7 @@ header .header-gallery {
 /* INDEX */
 .index-banner {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-image: url("../img/anju_banner.jpg");
     background-repeat: no-repeat;
     /* background-position: center; */
@@ -347,7 +349,6 @@ header .header-gallery {
         margin: 0 auto;
     }
     .index-banner {
-        height: calc(100vh - 100px);
         background-position: center;
     }
     .index-banner h1 {
