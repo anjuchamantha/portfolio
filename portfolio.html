@@ -30,7 +30,18 @@
         </header>
         <main>
             <div class="wrapper">
-                <section id="content"></section>
+                <div class="tabContainer">
+                    <div class="buttonContainer">
+                        <button onclick="showPanel(0)">About</button>
+                        <button onclick="showPanel(1)">Education</button>
+                        <button onclick="showPanel(2)">Achievements</button>
+                        <button onclick="showPanel(3)">Projects</button>
+                    </div>
+                    <section class="tabPanel" id="about">about</section>
+                    <section class="tabPanel" id="education">education</section>
+                    <section class="tabPanel" id="achievements"></section>
+                    <section class="tabPanel" id="projects">projects</section>
+                </div>
             </div>
         </main>
         <footer>

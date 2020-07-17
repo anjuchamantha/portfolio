@@ -31,7 +31,7 @@ function displaySection(items) {
     for (let i = 0; i < items.length; i++) {
         sec += makeItem(items[i]);
     }
-    document.getElementById('content').innerHTML = sec;
+    document.getElementById('achievements').innerHTML = sec;
 }
 
 loadJSON('data/achievements.json', function (response) {
@@ -42,4 +42,26 @@ loadJSON('data/achievements.json', function (response) {
 
 });
 
+// TAB NAV
 
+let tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+let tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+
+function showPanel(panelIndex) {
+    // change button style when clicked
+    tabButtons.forEach(function (node) {
+        node.style.backgroundColor = "rgba(0, 0, 0, 0.13)";
+        node.style.color = "rgba(17, 17, 17, 0.8)";
+    });
+    tabButtons[panelIndex].style.backgroundColor = "rgba(17, 17, 17, 0.5)";
+    tabButtons[panelIndex].style.color = "white";
+
+    // show relevant tab panel
+    tabPanels.forEach(function (node) {
+        node.style.display = "none";
+    });
+    tabPanels[panelIndex].style.display = "block";
+}
+
+// show first panel when page loads
+showPanel(0);

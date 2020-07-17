@@ -1,6 +1,6 @@
 .item {
     padding: 8px;
-    margin: 8px;
+
     margin-bottom: 30px;
     border: rgba(17, 17, 17, 0.041) solid 2px;
 }
@@ -23,9 +23,6 @@
     padding: 0 10px 0 10px;
 }
 
-#content {
-    padding: 0px 0px 10px 0px;
-}
 .item .item-img {
     /* margin: 16px 16px 0; */
     width: calc(100%);
@@ -102,4 +99,34 @@
         opacity: 0.85;
         transition: opacity 0.5s;
     }
+}
+
+/* TAB MENU */
+.tabPanel {
+    padding: 0px 0px 10px 0px;
+    margin: 8px;
+}
+
+.tabContainer .buttonContainer {
+    height: 35px;
+}
+.tabContainer .buttonContainer button {
+    width: 25%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    /* border: solid rgba(0, 0, 0, 0.219) 1px; */
+    /* background-color: rgba(0, 0, 0, 0.13); */
+    outline: none;
+    float: left;
+    font-family: Catamaran;
+    font-size: 14px;
+    font-weight: 500;
+    /* color: rgba(17, 17, 17, 0.8); */
+}
+
+.tabContainer .buttonContainer button:hover {
+    background-color: rgba(17, 17, 17, 0.5);
+    color: white;
 }
