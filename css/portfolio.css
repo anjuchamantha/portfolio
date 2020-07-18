@@ -59,7 +59,7 @@
     text-align: left;
     font-weight: 100;
 }
-.item img {
+.item .image {
     /* height: 100%; */
     max-height: calc(100vh - 300px);
     width: 100%;
@@ -216,4 +216,13 @@
     .item-li-span {
         text-align: left;
     }
+}
+
+/* ABOUT TAB */
+
+.profile-pic {
+    padding: 10px 40px 20px 40px;
+    height: calc(100vw - 115px);
+    width: calc(100vw - 115px);
+    border-radius: 50%;
 }

@@ -1,0 +1,85 @@
+{
+    "profile_pic": "data/Anju Chamantha.jpg",
+    "name": "T. Anju Chamantha",
+    "title": "Computer Science Engineering Undergraduate",
+    "address": "11A, Weragama Road, Wadduwa",
+    "phone": "0778396415",
+    "email": "chamantha97anju@gmail.com",
+    "linkedin": "www.linkedin.com/in/anjuchamantha",
+    "github": "https://github.com/anjuchamantha",
+    "profile": "A 3rd year undergraduate with good skills and passion for learning. Have an interest in designing and developing mobile apps. Love to do robotics/IOT projects in leisure time.",
+    "technical": {
+        "languages": [
+            {
+                "tech": "Python",
+                "level": "85"
+            },
+            {
+                "tech": " Java",
+                "level": "80"
+            },
+            {
+                "tech": "JavaScript",
+                "level": "50"
+            },
+            {
+                "tech": "Dart",
+                "level": "50"
+            },
+            {
+                "tech": "C",
+                "level": "40"
+            }
+        ],
+        "web": [
+            {
+                "tech": "HTML",
+                "level": "85"
+            },
+            {
+                "tech": " CSS",
+                "level": "80"
+            },
+            {
+                "tech": "JavaScript",
+                "level": "50"
+            },
+            {
+                "tech": "Bootstrap",
+                "level": "60"
+            },
+            {
+                "tech": "Angular",
+                "level": "40"
+            },
+            {
+                "tech": "Dash(Python)",
+                "level": "40"
+            }
+        ],
+        "db": [
+            {
+                "tech": "MySQL",
+                "level": "80"
+            },
+            {
+                "tech": " PostgreSQL",
+                "level": "80"
+            },
+            {
+                "tech": "Firebase",
+                "level": "60"
+            }
+        ],
+        "robotics": [
+            {
+                "tech": "Arduino",
+                "level": "80"
+            },
+            {
+                "tech": " STM32",
+                "level": "60"
+            }
+        ]
+    }
+}

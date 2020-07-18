@@ -61,17 +61,37 @@ function makeEducationItem(item) {
     let section = "<section class=\"item item-education\">" + name + programs_div + "</section>";
     return section;
 }
+function makeAboutItem(item) {
+    let name = "<h3>" + item.name + "<span>" + item.title + "</span>" + "</h3>";
+    let contact_div = "<div> <ul>" +
+        "<li>" + item.address + "</li>" +
+        "<li>" + item.phone + "</li>" +
+        "<li>" + item.email + "</li>" +
+        "<li>" + item.linkedin + "</li>" +
+        "<li>" + item.github + "</li>" +
+        "</ul> </div>";
+    let profile_pic = "<img class=\"profile-pic\" src=\"" + item.profile_pic + "\">";
+    let profile_content = "<div class=\"profile-content\">" + name + contact_div + "</div>";
+    let about = "<div class=\"about\">" + profile_pic + profile_content + "</div>";
+    let section = "<section class=\"item item-education\">" + about + "</section>";
+    return section;
+}
 
 function displaySection(items, element) {
-    let sec = ""
-    for (let i = 0; i < items.length; i++) {
-        switch (element) {
-            case "achievements":
-                sec += makeAchievementItem(items[i]);
-                break;
-            case "education":
-                sec += makeEducationItem(items[i]);
-                break;
+    let sec = "";
+    if (element == "about") {
+        sec += makeAboutItem(items);
+    }
+    else {
+        for (let i = 0; i < items.length; i++) {
+            switch (element) {
+                case "achievements":
+                    sec += makeAchievementItem(items[i]);
+                    break;
+                case "education":
+                    sec += makeEducationItem(items[i]);
+                    break;
+            }
         }
     }
     document.getElementById(element).innerHTML = sec;
@@ -93,4 +113,9 @@ loadJSON('data/education.json', function (response) {
     // Parse JSON string into object
     var items = JSON.parse(response);
     displaySection(items, "education")
+});
+loadJSON('data/about.json', function (response) {
+    // Parse JSON string into object
+    var items = JSON.parse(response);
+    displaySection(items, "about")
 });
