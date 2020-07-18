@@ -228,9 +228,9 @@
 }
 
 .profile-pic-container {
-    background: linear-gradient(-45deg, #2d3436, #636e72, #b2bec3);
+    background: linear-gradient(-45deg, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.3));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
 
     text-align: center;
 }
@@ -245,6 +245,18 @@
     border-left: hidden !important;
     color: white !important;
     font-weight: 200;
+}
+.contact ul {
+    padding: 10px;
+}
+
+.contact li {
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    list-style: none;
+    margin-bottom: 3px;
 }
 
 @keyframes gradient {

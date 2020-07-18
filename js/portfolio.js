@@ -63,7 +63,7 @@ function makeEducationItem(item) {
 }
 function makeAboutItem(item) {
     let name = "<h3>" + item.name + "<span class=\"title-span\">" + item.title + "</span>" + "</h3>";
-    let contact_div = "<div> <ul>" +
+    let contact_div = "<div class=\"contact\"> <ul>" +
         "<li>" + item.address + "</li>" +
         "<li>" + item.phone + "</li>" +
         "<li>" + item.email + "</li>" +
