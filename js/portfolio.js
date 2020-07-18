@@ -62,7 +62,7 @@ function makeEducationItem(item) {
     return section;
 }
 function makeAboutItem(item) {
-    let name = "<h3>" + item.name + "<span>" + item.title + "</span>" + "</h3>";
+    let name = "<h3>" + item.name + "<span class=\"title-span\">" + item.title + "</span>" + "</h3>";
     let contact_div = "<div> <ul>" +
         "<li>" + item.address + "</li>" +
         "<li>" + item.phone + "</li>" +
@@ -70,8 +70,8 @@ function makeAboutItem(item) {
         "<li>" + item.linkedin + "</li>" +
         "<li>" + item.github + "</li>" +
         "</ul> </div>";
-    let profile_pic = "<div class=\"profile-pic-container\"><img class=\"profile-pic\" src=\"" + item.profile_pic + "\"></div>";
-    let profile_content = "<div class=\"profile-content\">" + name + contact_div + "</div>";
+    let profile_pic = "<div class=\"profile-pic-container\"><img class=\"profile-pic\" src=\"" + item.profile_pic + "\">" + name + "</div>";
+    let profile_content = "<div class=\"profile-content\">" + contact_div + "</div>";
     let about = "<div class=\"about\">" + profile_pic + profile_content + "</div>";
     let section = "<section class=\"item item-education\">" + about + "</section>";
     return section;
