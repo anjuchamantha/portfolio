@@ -226,3 +226,12 @@
     width: calc(100vw - 115px);
     border-radius: 50%;
 }
+
+@media only screen and (min-width: 1000px) {
+    .profile-pic {
+        padding: 10px 40px 20px 40px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+}
