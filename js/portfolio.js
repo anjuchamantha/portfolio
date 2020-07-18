@@ -54,7 +54,7 @@ function makeEducationItem(item) {
         const program = item.programs[i];
         let grade = "<span class=\"item-li-span\">" + item.grades[i] + "</span>";
         let detail = "<div class=\"item-li-detail\">" + item.details[i] + "</div>";
-        let program_li = "<li>" + program + grade + detail + "</li>";
+        let program_li = "<li>" + "<a target=\"_blank\" href=\"" + item.certificates[i] + "\">" + program + "</a>" + grade + detail + "</li>";
         programs += program_li;
     }
     let programs_div = "<div class=\"item-detail\"><ul>" + programs + "</ul></div>";

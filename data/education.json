@@ -8,6 +8,10 @@
         "details": [
             "3rd Year Undergraduate"
         ],
+        "certificates": [
+            "#",
+            "#"
+        ],
         "grades": [
             "3.7 CGPA"
         ]
@@ -22,6 +26,10 @@
         "details": [
             "2A’s (Mathematics, Physics), 1B (Chemistry)",
             "8A’s, 1B (English Literature)"
+        ],
+        "certificates": [
+            "#",
+            "#"
         ],
         "grades": [
             "Z 1.9898",
@@ -39,6 +47,10 @@
             "",
             ""
         ],
+        "certificates": [
+            "#",
+            "#"
+        ],
         "grades": [
             "",
             ""
@@ -48,7 +60,7 @@
         "institute": "Other Courses & Certificates",
         "date": "2019 - PRESENT",
         "programs": [
-            "Full-stack web development with React",
+            "Front-End Web UI Frameworks: Bootstrap 4",
             "Introduction to Self-Driving Cars",
             "Google Cloud Platform Infrastructure",
             "Python Data Visualization",
@@ -62,6 +74,14 @@
             "Coursera - Rice University",
             "Cisco",
             "Cisco"
+        ],
+        "certificates": [
+            "https://www.coursera.org/account/accomplishments/certificate/R77XVVDWAPVS",
+            "https://www.coursera.org/account/accomplishments/certificate/B7Q5K7LWPZYZ",
+            "https://www.coursera.org/account/accomplishments/certificate/BNJA26LQBKZC",
+            "https://www.coursera.org/account/accomplishments/certificate/9UCJW57MDX8V",
+            "#",
+            "#"
         ],
         "grades": [
             "Ongoing",
