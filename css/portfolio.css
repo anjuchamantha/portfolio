@@ -221,15 +221,32 @@
 /* ABOUT TAB */
 
 .profile-pic {
-    padding: 10px 40px 20px 40px;
-    height: calc(100vw - 115px);
-    width: calc(100vw - 115px);
+    padding: 20px 60px 20px 60px;
+    height: calc(100vw - 155px);
+    width: calc(100vw - 155px);
     border-radius: 50%;
 }
 
+.profile-pic-container {
+    background: linear-gradient(-45deg, #383838, rgb(53, 53, 53), #a0a0a0, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 @media only screen and (min-width: 1000px) {
     .profile-pic {
-        padding: 10px 40px 20px 40px;
+        padding: 20px 40px 20px 40px;
         height: 200px;
         width: 200px;
         border-radius: 50%;

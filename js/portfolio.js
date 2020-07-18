@@ -70,7 +70,7 @@ function makeAboutItem(item) {
         "<li>" + item.linkedin + "</li>" +
         "<li>" + item.github + "</li>" +
         "</ul> </div>";
-    let profile_pic = "<img class=\"profile-pic\" src=\"" + item.profile_pic + "\">";
+    let profile_pic = "<div class=\"profile-pic-container\"><img class=\"profile-pic\" src=\"" + item.profile_pic + "\"></div>";
     let profile_content = "<div class=\"profile-content\">" + name + contact_div + "</div>";
     let about = "<div class=\"about\">" + profile_pic + profile_content + "</div>";
     let section = "<section class=\"item item-education\">" + about + "</section>";
