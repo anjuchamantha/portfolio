@@ -77,11 +77,40 @@ function makeAboutItem(item) {
     let section = "<section class=\"item item-about\">" + about + "</section>";
     return section;
 }
+function makeTechnicalItem(item) {
+    let languages = item.technical.languages;
+    let web = item.technical.web;
+    let database = item.technical.database;
+    let robotics = item.technical.robotics;
+    let technical_list = [languages, web, database, robotics];
+    let technical_fields = item.technical_fields;
+    let tech_content = "";
+    for (let j = 0; j < technical_list.length; j++) {
+        let tech_field = technical_list[j];
+        console.log(tech_field);
+        let name = "<h3>" + technical_fields[j] + "</h3>";
+        let tech_item_li_list = "";
+
+        for (let i = 0; i < tech_field.length; i++) {
+            const tech = tech_field[i].tech;
+            const level = tech_field[i].level;
+            const tech_item = "<li><h4>" + tech + "<span>" + level + "</span></h4></li>";
+            tech_item_li_list += tech_item;
+        }
+        let tech_item_ul = "<div class=\"technical-item\">" + name + "<ul>" + tech_item_li_list + "</div></ul>";
+        tech_content += tech_item_ul;
+
+    }
+    let section_name = "<h2>" + "Technical Skills" + "</h2>";
+    let section = "<section class=\"item item-technical\">" + section_name + tech_content + "</section>";
+    return section;
+}
 
 function displaySection(items, element) {
     let sec = "";
     if (element == "about") {
         sec += makeAboutItem(items);
+        sec += makeTechnicalItem(items);
     }
     else {
         for (let i = 0; i < items.length; i++) {

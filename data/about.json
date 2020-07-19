@@ -8,6 +8,12 @@
     "linkedin": "www.linkedin.com/in/anjuchamantha",
     "github": "https://github.com/anjuchamantha",
     "profile": "A 3rd year undergraduate with good skills and passion for learning. Have an interest in designing and developing mobile apps. Love to do robotics/IOT projects in leisure time.",
+    "technical_fields": [
+        "Languages",
+        "Web Dev",
+        "Database",
+        "Robotics"
+    ],
     "technical": {
         "languages": [
             {
@@ -57,7 +63,7 @@
                 "level": "40"
             }
         ],
-        "db": [
+        "database": [
             {
                 "tech": "MySQL",
                 "level": "80"
