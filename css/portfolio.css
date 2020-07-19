@@ -292,6 +292,7 @@
 
 .contact .fa {
     color: white;
+    width: 20px;
 }
 
 @keyframes gradient {
