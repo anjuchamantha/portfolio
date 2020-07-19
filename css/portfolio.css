@@ -220,13 +220,16 @@
 
 /* ABOUT TAB */
 .item-about {
-    height: calc(100vh - 150px - 16px);
+    /* height: calc(100vh - 150px - 16px); */
+    /* min-height: 500px; */
 }
 
 .profile-pic {
     padding: 30px 60px 20px 60px;
     height: calc(100vw - 155px);
     width: calc(100vw - 155px);
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
 }
 
@@ -236,19 +239,21 @@
     animation: gradient 10s ease infinite;
     height: inherit;
     vertical-align: bottom;
-    position: relative;
+    /* position: relative; */
 }
 .profile-pic-container {
-    /* background-color: lightcoral; */
-    height: inherit;
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+    /* height: inherit; */
 }
 
 .profile-content {
     /* background-color: khaki; */
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: 0;
-    height: 250px;
+    /* height: 250px; */
     vertical-align: bottom;
 }
 .about h3 {
