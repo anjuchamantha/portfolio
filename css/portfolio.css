@@ -219,6 +219,9 @@
 }
 
 /* ABOUT TAB */
+.item-about {
+    height: calc(100vh - 150px - 16px);
+}
 
 .profile-pic {
     padding: 30px 60px 20px 60px;
@@ -227,12 +230,30 @@
     border-radius: 50%;
 }
 
-.profile-pic-container {
-    background: linear-gradient(-45deg, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.3));
+.about {
+    background: linear-gradient(-45deg, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.4));
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 10s ease infinite;
+    height: inherit;
+    vertical-align: bottom;
+    position: relative;
+}
+.profile-pic-container {
+    /* background-color: lightcoral; */
+    height: inherit;
+}
 
-    text-align: center;
+.profile-content {
+    /* background-color: khaki; */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 250px;
+    vertical-align: bottom;
+}
+.about h3 {
+    color: white;
+    text-align: center !important;
 }
 
 .profile-pic-container h3 {
@@ -244,19 +265,28 @@
     text-align: center !important;
     border-left: hidden !important;
     color: white !important;
-    font-weight: 200;
+    font-weight: 100 !important;
 }
 .contact ul {
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 }
 
 .contact li {
     font-family: Catamaran;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 18px;
     list-style: none;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.contact li a {
+    font-family: Catamaran;
+    color: white;
+}
+
+.contact .fa {
+    color: white;
 }
 
 @keyframes gradient {
@@ -271,10 +301,26 @@
     }
 }
 @media only screen and (min-width: 1000px) {
+    .item-about {
+        height: auto;
+    }
     .profile-pic {
-        padding: 20px 40px 20px 40px;
+        padding: 30px 40px 30px 40px;
         height: 200px;
         width: 200px;
-        border-radius: 50%;
+    }
+    .about {
+        display: flex;
+        position: static;
+    }
+    .profile-content {
+        position: relative;
+        padding-left: 50px;
+        padding-top: 10px;
+        width: auto;
+    }
+
+    .profile-content h3 {
+        text-align: left !important;
     }
 }

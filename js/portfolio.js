@@ -64,16 +64,17 @@ function makeEducationItem(item) {
 function makeAboutItem(item) {
     let name = "<h3>" + item.name + "<span class=\"title-span\">" + item.title + "</span>" + "</h3>";
     let contact_div = "<div class=\"contact\"> <ul>" +
-        "<li>" + item.address + "</li>" +
-        "<li>" + item.phone + "</li>" +
-        "<li>" + item.email + "</li>" +
-        "<li>" + item.linkedin + "</li>" +
-        "<li>" + item.github + "</li>" +
+        "<li>" + "<i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>" + "<a href=\"https://maps.google.com/?q=6.670752866299279, 79.92809486119278\" target=\"_blank\">" + item.address + "</a></li>" +
+        "<li>" + "<i class=\"fa fa-phone\" aria-hidden=\"true\"></i>" + "<a href=\"tel:94778396415\">" + item.phone + "</a></li>" +
+        "<li>" + "<i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>" + "<a href=\"mailto:chamantha97anju@gmail.com\" target=\"_blank\">" + item.email + "</a></li>" +
+        "<li>" + "<i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i>" + "<a href=\"https://www.linkedin.com/in/anjuchamantha/\" target=\"_blank\">" + item.linkedin + "</a></li>" +
+        "<li>" + "<i class=\"fa fa-github\" aria-hidden=\"true\"></i>" + "<a href=\"https://github.com/anjuchamantha\" target=\"_blank\">" + item.github + "</a></li>" +
         "</ul> </div>";
-    let profile_pic = "<div class=\"profile-pic-container\"><img class=\"profile-pic\" src=\"" + item.profile_pic + "\">" + name + "</div>";
-    let profile_content = "<div class=\"profile-content\">" + contact_div + "</div>";
+    let profile_content = "<div class=\"profile-content\">" + name + contact_div + "</div>";
+    let profile_pic = "<div class=\"profile-pic-container\"><img class=\"profile-pic\" src=\"" + item.profile_pic + "\">" + "</div>";
+
     let about = "<div class=\"about\">" + profile_pic + profile_content + "</div>";
-    let section = "<section class=\"item item-education\">" + about + "</section>";
+    let section = "<section class=\"item item-about\">" + about + "</section>";
     return section;
 }
 
