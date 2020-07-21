@@ -361,21 +361,31 @@
     background: rgba(0, 0, 0, 0.85);
     padding: 0px !important;
     margin: 0px !important;
-    /* position: absolute; */
-    /* bottom: 0px; */
-    /* opacity: 0.85; */
     transition: opacity 0.5s ease;
 
     font-family: Catamaran;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     margin-bottom: 0px;
     text-align: center;
-    line-height: calc((100vw - 80px) / 3);
+    line-height: 20px;
     vertical-align: middle;
-    font-weight: 100;
+    font-weight: 400;
 
     opacity: 0;
+}
+.tech-progress {
+    padding: 8px !important;
+
+    /* line-height: 100px; */
+}
+.progress-container {
+    margin-top: 5px !important;
+}
+.progress-inside {
+    font-size: 14px;
+    height: 15px;
+    /* margin-top: 5px !important; */
 }
 
 .tech-logo-div:hover img {
@@ -387,6 +397,14 @@
     transition: opacity 0.5s;
 }
 
+.overlay ul {
+    display: block;
+}
+
+.overlay li {
+    display: block;
+}
+
 @media only screen and (min-width: 1000px) {
     .tech-logo-div {
         height: 100px;
@@ -396,8 +414,12 @@
         opacity: 0;
         transition: opacity 0.5s ease;
         margin-bottom: 0px;
-        line-height: 100px;
+        line-height: 20px;
+
+        /* margin: 0 auto; */
+        /* height: auto; */
     }
+
     .tech-logo-div:hover img {
         transform: scale(1.2);
         transition: transform 0.5s;

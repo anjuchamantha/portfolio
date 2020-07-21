@@ -95,7 +95,9 @@ function makeTechnicalItem(item) {
             const tech = tech_field[i].tech;
             const level = tech_field[i].level;
             const img_path = tech_field[i].img;
-            let detail = "<div class=\"overlay\">" + tech + "</div>"
+            let progress = "<div class=\"progress-container w3-light-grey w3-round-xlarge\"><div class=\"progress-inside w3-container w3-blue w3-round-xlarge\" style=\"width:" + level + "%\"></div></div><br>";
+            let tech_progress = "<div class=\"tech-progress\">" + tech + progress + "</div";
+            let detail = "<div class=\"overlay\">" + tech_progress + "</div>";
             let img = "<img src=\"" + img_path + "\">";
             let tech_item = "<li><div class=\"tech-logo-div\">" + img + detail + "</div></li>";
             tech_item_li_list += tech_item;
