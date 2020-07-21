@@ -1,10 +1,10 @@
 .progress-container {
     background-color: white;
     border-radius: 13px;
-    padding: 2px;
+    padding: 1px;
 }
 
-.progress-inside {
+.progress-container > div {
     background-color: orange;
     height: 20px;
     border-radius: 10px;
