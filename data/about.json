@@ -10,7 +10,7 @@
     "profile": "A 3rd year undergraduate with good skills and passion for learning. Have an interest in designing and developing mobile apps. Love to do robotics/IOT projects in leisure time.",
     "technical_fields": [
         "Languages",
-        "Web Dev",
+        "Web & Mobile",
         "Database",
         "Robotics"
     ],
@@ -18,73 +18,84 @@
         "languages": [
             {
                 "tech": "Python",
-                "level": "85"
+                "level": "85",
+                "img": "img/logo_icons/icons8-python-100.png"
             },
             {
                 "tech": " Java",
-                "level": "80"
+                "level": "80",
+                "img": "img/logo_icons/icons8-java-100.png"
             },
             {
                 "tech": "JavaScript",
-                "level": "50"
+                "level": "50",
+                "img": "img/logo_icons/icons8-javascript-100.png"
             },
             {
                 "tech": "Dart",
-                "level": "50"
+                "level": "50",
+                "img": ""
             },
             {
                 "tech": "C",
-                "level": "40"
+                "level": "40",
+                "img": "img/logo_icons/icons8-c-programming-100.png"
+            },
+            {
+                "tech": "HTML",
+                "level": "85",
+                "img": "img/logo_icons/icons8-html-5-100.png"
+            },
+            {
+                "tech": " CSS",
+                "level": "80",
+                "img": "img/logo_icons/icons8-css3-100.png"
             }
         ],
         "web": [
             {
-                "tech": "HTML",
-                "level": "85"
-            },
-            {
-                "tech": " CSS",
-                "level": "80"
-            },
-            {
-                "tech": "JavaScript",
-                "level": "50"
+                "tech": "Flutter",
+                "level": "85",
+                "img": "img/logo_icons/icons8-flutter-100.png"
             },
             {
                 "tech": "Bootstrap",
-                "level": "60"
+                "level": "60",
+                "img": "img/logo_icons/icons8-bootstrap-100.png"
             },
             {
-                "tech": "Angular",
-                "level": "40"
+                "tech": "AngularJS",
+                "level": "40",
+                "img": "img/logo_icons/icons8-angularjs-100.png"
             },
             {
                 "tech": "Dash(Python)",
-                "level": "40"
+                "level": "40",
+                "img": ""
             }
         ],
         "database": [
             {
                 "tech": "MySQL",
-                "level": "80"
+                "level": "80",
+                "img": "img/logo_icons/icons8-mysql-logo-100.png"
             },
             {
                 "tech": " PostgreSQL",
-                "level": "80"
+                "level": "80",
+                "img": "img/logo_icons/icons8-postgresql-100.png"
             },
             {
                 "tech": "Firebase",
-                "level": "60"
+                "level": "60",
+                "img": "img/logo_icons/icons8-firebase-100.png"
             }
         ],
         "robotics": [
             {
                 "tech": "Arduino",
-                "level": "80"
-            },
-            {
-                "tech": " STM32",
-                "level": "60"
+                "level": "80",
+                "img": "img/logo_icons/icons8-arduino-100.png"
             }
         ]
     }

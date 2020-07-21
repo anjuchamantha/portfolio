@@ -101,7 +101,7 @@ function makeTechnicalItem(item) {
         tech_content += tech_item_ul;
 
     }
-    let section_name = "<h2>" + "Technical Skills" + "</h2>";
+    let section_name = "<h2 class=\"about\">" + "Technical Skills" + "</h2>";
     let section = "<section class=\"item item-technical\">" + section_name + tech_content + "</section>";
     return section;
 }

@@ -29,24 +29,14 @@
 }
 
 .item .item-img {
-    /* margin: 16px 16px 0; */
     width: calc(100%);
-    /* height: 100px; */
     position: relative;
-    /* text-align: center; */
     overflow: hidden;
 }
 .overlay {
     cursor: pointer;
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
-    /* flex-direction: column; */
     background: rgba(0, 0, 0, 0.85);
-    /* width: 100%; */
-    /* height: 40%; */
     position: absolute;
-    /* top: auto; */
     bottom: 0px;
     opacity: 0.85;
     transition: opacity 0.5s ease;
@@ -60,7 +50,6 @@
     font-weight: 100;
 }
 .item .image {
-    /* height: 100%; */
     max-height: calc(100vh - 300px);
     width: 100%;
     object-fit: cover;
@@ -86,7 +75,6 @@
         line-height: 24px;
         display: inline-block;
         vertical-align: middle;
-        /* float: right; */
     }
 
     .overlay {
@@ -120,7 +108,6 @@
     margin-bottom: 10px;
     padding: 0px 8px 10px 8px;
     position: fixed;
-    /* overflow: hidden; */
     width: calc(100vw - 16px);
     background-color: white;
     z-index: 1000;
@@ -131,19 +118,15 @@
     margin: 0px;
     padding: 0px;
     border: none;
-    /* border: solid rgba(0, 0, 0, 0.219) 1px; */
-    /* background-color: rgba(0, 0, 0, 0.13); */
     outline: none;
     float: left;
     font-family: Catamaran;
     font-size: 14px;
     font-weight: 500;
-    /* color: rgba(17, 17, 17, 0.8); */
 }
 
 .tabContainer .buttonContainer button:hover {
-    background-color: red;
-    /* color: white; */
+    background-color: rgba(17, 17, 17, 0.2) !important;
 }
 
 /* EDUCATION TAB */
@@ -161,14 +144,12 @@
     margin: 0px 0px 0px 10px;
     text-align: right;
     float: right;
-    /* line-height: 14px; */
     display: inline-block;
 
     font-family: Catamaran;
     font-size: 14px;
     color: #111;
     line-height: 16px;
-    /* display: block; */
     text-align: left;
     border-left: hidden;
     border-right: 2px solid rgba(17, 17, 17, 0.651);
@@ -206,11 +187,9 @@
     }
 
     .item-li-detail {
-        /* display: inline; */
         float: right;
         text-align: left;
         margin-bottom: 0px;
-        /* border-right: 2px solid rgba(17, 17, 17, 0.651); */
         padding-right: 10px;
     }
     .item-li-span {
@@ -219,10 +198,6 @@
 }
 
 /* ABOUT TAB */
-.item-about {
-    /* height: calc(100vh - 150px - 16px); */
-    /* min-height: 500px; */
-}
 
 .profile-pic {
     padding: 30px 60px 30px 60px;
@@ -239,21 +214,15 @@
     animation: gradient 10s ease infinite;
     height: inherit;
     vertical-align: bottom;
-    /* position: relative; */
 }
 .profile-pic-container {
     display: flex;
     justify-content: center;
-    /* background-color: lightcoral; */
-    /* height: inherit; */
 }
 
 .profile-content {
-    /* background-color: khaki; */
-    /* position: absolute; */
     width: 100%;
     bottom: 0;
-    /* height: 250px; */
     vertical-align: bottom;
 }
 .about h3 {
@@ -329,4 +298,29 @@
     .profile-content h3 {
         text-align: left !important;
     }
+}
+
+/* TECHNICAL SKILLS */
+
+.item-technical h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: Catamaran;
+    font-size: 26px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.item-technical li {
+    background-color: khaki;
+    display: inline;
+    list-style-type: none;
+    /* padding-right: 20px; */
+    float: left;
+    margin: 10px;
+}
+
+.item-technical ul {
+    margin-bottom: 60px;
 }

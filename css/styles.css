@@ -206,7 +206,6 @@ header {
     width: 100%;
     height: 80px;
     z-index: 500;
-    /* background-color: yellow; */
 }
 
 header .header-brand {
@@ -284,7 +283,6 @@ header .header-gallery {
     height: calc(100vh - 80px);
     background-image: url("../img/anju_banner.jpg");
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
     display: table;
@@ -340,7 +338,6 @@ header .header-gallery {
     line-height: 100px;
     color: #111;
     text-align: center;
-    /* text-transform: uppercase; */
 }
 
 @media only screen and (min-width: 1000px) {
@@ -399,12 +396,10 @@ span {
 .gallery-items div {
     margin: 16px 16px 0;
     width: calc(100% - 32px);
-    /* height: 100px; */
     background-color: #f2f2f2;
 }
 
 .gallery-items img {
-    /* height: 100%; */
     max-height: calc(100vh - 200px);
     width: 100%;
     object-fit: cover;
@@ -438,7 +433,6 @@ span {
         line-height: 24px;
         display: inline-block;
         vertical-align: middle;
-        /* float: right; */
     }
     .gallery-item {
         height: 500px;
@@ -465,9 +459,6 @@ span {
     .index-links div h3 {
         line-height: 230px;
     }
-    /* a div {
-        overflow: hidden;
-    } */
     img {
         transition: transform 0.5s;
     }
