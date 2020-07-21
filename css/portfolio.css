@@ -171,11 +171,13 @@
 .tab-content {
     padding-top: 50px;
 }
-
 @media only screen and (min-width: 1000px) {
     .tabContainer .buttonContainer {
         width: 984px;
     }
+}
+
+@media only screen and (min-width: 768px) {
     .item h3 {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -275,7 +277,7 @@
         background-position: 0% 50%;
     }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
     .item-about {
         height: auto;
     }
@@ -314,10 +316,8 @@
 }
 
 .item-technical li {
-    /* background-color: khaki; */
     display: inline;
     list-style-type: none;
-    /* padding-right: 20px; */
     float: left;
 }
 
@@ -331,7 +331,6 @@
     height: calc((100vw - 80px) / 3);
     width: calc((100vw - 80px) / 3);
     margin: 10px 10px 0px 0px;
-    /* background-color: lightskyblue; */
     border: solid 2px rgba(17, 17, 17, 0.301);
     text-align: center;
 
@@ -397,7 +396,7 @@
     display: block;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 450px) {
     .tech-logo-div {
         height: 100px;
         width: 100px;
@@ -411,7 +410,9 @@
     .tech-progress {
         line-height: 40px;
     }
+}
 
+@media only screen and (min-width: 768px) {
     .tech-logo-div:hover img {
         transform: scale(1.2);
         transition: transform 1s;
