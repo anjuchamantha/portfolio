@@ -540,3 +540,8 @@ footer a:hover {
         padding-right: 100px;
     }
 }
+
+/* Remove all blue when click */
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
