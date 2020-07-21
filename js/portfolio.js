@@ -94,10 +94,13 @@ function makeTechnicalItem(item) {
         for (let i = 0; i < tech_field.length; i++) {
             const tech = tech_field[i].tech;
             const level = tech_field[i].level;
-            const tech_item = "<li><h4>" + tech + "<span>" + level + "</span></h4></li>";
+            const img_path = tech_field[i].img;
+            let detail = "<div class=\"overlay\">" + tech + "</div>"
+            let img = "<img src=\"" + img_path + "\">";
+            let tech_item = "<li><div class=\"tech-logo-div\">" + img + detail + "</div></li>";
             tech_item_li_list += tech_item;
         }
-        let tech_item_ul = "<div class=\"technical-item\">" + name + "<ul>" + tech_item_li_list + "</div></ul>";
+        let tech_item_ul = "<div class=\"technical-item\">" + name + "<ul>" + tech_item_li_list + "</ul></div>";
         tech_content += tech_item_ul;
 
     }
