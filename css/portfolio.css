@@ -377,11 +377,11 @@
     opacity: 0;
 }
 
-.tech-logo-div:active img {
+.tech-logo-div:hover img {
     transform: scale(1.2);
     transition: transform 0.1s;
 }
-.tech-logo-div:active .overlay {
+.tech-logo-div:hover .overlay {
     opacity: 0.85;
     transition: opacity 0.1s;
 }
