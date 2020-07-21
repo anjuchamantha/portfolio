@@ -124,11 +124,11 @@
     font-size: 14px;
     font-weight: 500;
 }
-
-.tabContainer .buttonContainer button:hover {
-    background-color: rgba(17, 17, 17, 0.2) !important;
+@media only screen and (min-width: 1000px) {
+    .tabContainer .buttonContainer button:hover {
+        background-color: rgba(17, 17, 17, 0.3) !important;
+    }
 }
-
 /* EDUCATION TAB */
 .item-detail li {
     font-family: Catamaran;
