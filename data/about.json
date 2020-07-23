@@ -19,83 +19,83 @@
             {
                 "tech": "Python",
                 "level": "85",
-                "img": "img/logo_icons/icons8-python-100.png"
+                "img": "img/logo_icons/python.png"
             },
             {
                 "tech": " Java",
                 "level": "80",
-                "img": "img/logo_icons/icons8-java-100.png"
+                "img": "img/logo_icons/java.png"
             },
             {
                 "tech": "JavaScript",
                 "level": "50",
-                "img": "img/logo_icons/icons8-javascript-100.png"
+                "img": "img/logo_icons/js.png"
             },
             {
                 "tech": "Dart",
                 "level": "50",
-                "img": "img/logo_icons/dart-logo.png"
+                "img": "img/logo_icons/dart.png"
             },
             {
                 "tech": "C",
                 "level": "40",
-                "img": "img/logo_icons/icons8-c-programming-100.png"
+                "img": "img/logo_icons/c.png"
             },
             {
                 "tech": "HTML",
                 "level": "85",
-                "img": "img/logo_icons/icons8-html-5-100.png"
+                "img": "img/logo_icons/html.png"
             },
             {
                 "tech": " CSS",
                 "level": "80",
-                "img": "img/logo_icons/icons8-css3-100.png"
+                "img": "img/logo_icons/css.png"
             }
         ],
         "web": [
             {
                 "tech": "Flutter",
                 "level": "85",
-                "img": "img/logo_icons/icons8-flutter-100.png"
+                "img": "img/logo_icons/flutter.png"
             },
             {
                 "tech": "Bootstrap",
                 "level": "60",
-                "img": "img/logo_icons/icons8-bootstrap-100.png"
+                "img": "img/logo_icons/bootstrap.png"
             },
             {
                 "tech": "AngularJS",
                 "level": "40",
-                "img": "img/logo_icons/icons8-angularjs-100.png"
+                "img": "img/logo_icons/angularjs.png"
             },
             {
                 "tech": "Dash(py)",
                 "level": "40",
-                "img": "img/logo_icons/dash-logo-300.png"
+                "img": "img/logo_icons/dash.png"
             }
         ],
         "database": [
             {
                 "tech": "MySQL",
                 "level": "80",
-                "img": "img/logo_icons/icons8-mysql-logo-100.png"
+                "img": "img/logo_icons/mysql.png"
             },
             {
                 "tech": " PostgreSQL",
                 "level": "80",
-                "img": "img/logo_icons/icons8-postgresql-100.png"
+                "img": "img/logo_icons/postgresql.png"
             },
             {
                 "tech": "Firebase",
                 "level": "60",
-                "img": "img/logo_icons/icons8-firebase-100.png"
+                "img": "img/logo_icons/firebase.png"
             }
         ],
         "robotics": [
             {
                 "tech": "Arduino",
                 "level": "80",
-                "img": "img/logo_icons/icons8-arduino-100.png"
+                "img": "img/logo_icons/arduino.png"
             }
         ]
     }

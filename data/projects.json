@@ -1,30 +1,34 @@
 [
     {
         "name": "Cellyzer – CDR Analyzing Library",
-        "img": "data/projects/cellyzer/cellyzer-collage.png",
-        "type": "Sem 5 Project",
+        "img": "data/projects/cellyzer_sem5_SEP/cellyzer-collage.png",
+        "type": "Sem 5 SE Project",
         "date": "Feb - June 2020",
         "url": "https://pypi.org/project/cellyzer/",
         "git": "https://github.com/anjuchamantha/cellyzer---CDR-data-analyzer",
         "tech": [
             {
                 "name": "Python",
-                "img": "img/logo_icons/icons8-python-100.png"
+                "img": "img/logo_icons/python.png"
             },
             {
                 "name": "HTML",
-                "img": "img/logo_icons/icons8-html-5-100.png"
+                "img": "img/logo_icons/html.png"
             },
             {
                 "name": "CSS",
-                "img": "img/logo_icons/icons8-css3-100.png"
+                "img": "img/logo_icons/css.png"
             },
             {
                 "name": "Dash(py)",
-                "img": "img/logo_icons/dash-logo-300.png"
+                "img": "img/logo_icons/dash.png"
             }
         ],
         "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            },
             {
                 "name": "Wageesha Bangamuarachchi",
                 "img": "data/people/wageesha.jpg"
@@ -39,5 +43,95 @@
             }
         ],
         "detail": "Cellyzer is a python library to analyze CDR (Call Details Records) data and visualize them using the Cellyzer GUI. It can handle call records, message records and cell (antenna) records. This is a Software Engineering group project done in 5th semester."
+    },
+    {
+        "name": "Neomerce – E Commerce Web App",
+        "img": "data/projects/neomerce_sem4_DB/neomerce.png",
+        "type": "Sem 4 DB Project",
+        "date": "Nov - Dec 2019",
+        "url": "https://neomerce.herokuapp.com",
+        "git": "https://github.com/kdsuneraavinash/neomerce",
+        "tech": [
+            {
+                "name": "HTML",
+                "img": "img/logo_icons/html.png"
+            },
+            {
+                "name": "CSS",
+                "img": "img/logo_icons/css.png"
+            },
+            {
+                "name": "JavaScript",
+                "img": "img/logo_icons/js.png"
+            },
+            {
+                "name": "NodeJS",
+                "img": "img/logo_icons/nodejs.png"
+            },
+            {
+                "name": "PostgreSQL",
+                "img": "img/logo_icons/postgresql.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            },
+            {
+                "name": "Sunera Avinash",
+                "img": "data/people/sunera.jpg"
+            },
+            {
+                "name": "Lahiru Udayanga",
+                "img": "data/people/lahiru_udayanga.jpg"
+            }
+        ],
+        "detail": "An e-commerce web application made for Semester 4 CS3042 Database Systems Module. Allows users to login and buy products and administrator report generation for statistics."
+    },
+    {
+        "name": "MediKit – Web & Mobile Applications",
+        "img": "data/projects/medikit_sem3_OOSD/medikit.png",
+        "type": "Sem 3 OOSD Project",
+        "date": "Jan - May 2019",
+        "url": "",
+        "git": "https://github.com/kdsuneraavinash/pulse-healthcare",
+        "tech": [
+            {
+                "name": "HTML",
+                "img": "img/logo_icons/html.png"
+            },
+            {
+                "name": "CSS",
+                "img": "img/logo_icons/css.png"
+            },
+            {
+                "name": "JavaScript",
+                "img": "img/logo_icons/js.png"
+            },
+            {
+                "name": "PHP",
+                "img": "img/logo_icons/php.png"
+            },
+            {
+                "name": "Flutter",
+                "img": "img/logo_icons/flutter.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            },
+            {
+                "name": "Sunera Avinash",
+                "img": "data/people/sunera.jpg"
+            },
+            {
+                "name": "Lahiru Udayanga",
+                "img": "data/people/lahiru_udayanga.jpg"
+            }
+        ],
+        "detail": "We as team-Pulse developed a healthcare services system named MediKit. Goal was to connect the doctor & the patient in a systematic way and let the patient get a readable prescription with a good understanding about the medicines he takes."
     }
 ]

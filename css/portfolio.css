@@ -33,6 +33,7 @@
     width: calc(100%);
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 .overlay {
     cursor: pointer;
@@ -51,7 +52,7 @@
     font-weight: 100;
 }
 .item .image {
-    max-height: calc(100vh - 300px);
+    /* max-height: calc(100vh - 300px); */
     width: 100%;
     object-fit: cover;
     z-index: 1;
@@ -86,12 +87,16 @@
         margin-bottom: 0px;
     }
     .item-img:hover img {
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: transform 0.5s;
     }
     .item-img:hover .overlay {
         opacity: 0.85;
         transition: opacity 0.5s;
+    }
+
+    .item {
+        padding: 15px;
     }
 }
 
