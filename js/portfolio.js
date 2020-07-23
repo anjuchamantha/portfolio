@@ -180,7 +180,7 @@ function displaySection(items, element) {
 }
 
 // show first panel when page loads
-showPanel(3);
+showPanel(0);
 loadJSON('data/about.json', function (response) {
     // Parse JSON string into object
     var items = JSON.parse(response);
