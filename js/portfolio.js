@@ -149,7 +149,9 @@ function makeProjectItem(item) {
         detail +
         "</div ></a>"
 
-    let section = "<section class=\"item\">" + name + tech_pills + links + team + img + "</section>"
+    let team_links_div = "<div class=\"team-links-div\">" + links + team + "</div>"
+
+    let section = "<section class=\"item\">" + name + tech_pills + team_links_div + img + "</section>"
     return section;
 }
 

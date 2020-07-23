@@ -1,7 +1,8 @@
 .item {
     padding: 8px;
     margin-bottom: 30px;
-    border: rgba(17, 17, 17, 0.041) solid 2px;
+    border: #26323850 solid 2px;
+    border-radius: 5px;
 }
 .item-detail a {
     text-decoration: inherit;
@@ -427,7 +428,6 @@
 
 /* PROJECTS TAB */
 .team-container {
-    /* background-color: #263238; */
     float: right;
 }
 
@@ -443,6 +443,7 @@
 }
 
 .links-div {
+    margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(17, 17, 17, 0.116);
@@ -450,10 +451,16 @@
 
 .links-div .url {
     display: block;
-    color: #111;
-    line-height: 22px;
+    color: #01579b;
+    line-height: 26px;
     font-size: 14px;
     font-family: Catamaran;
+    font-weight: 500;
+}
+
+.links-div .url:hover {
+    color: #111;
+    font-weight: 700;
 }
 
 .links-div .fa {
@@ -480,11 +487,17 @@
 }
 
 .tech-pill div {
-    display: inline-block;
     font-family: Catamaran;
     font-size: 12px;
     line-height: 30px;
     padding: 0px 5px 0px 5px;
     vertical-align: middle !important;
     color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .links-div {
+        border-bottom: none;
+        display: inline-block;
+    }
 }
