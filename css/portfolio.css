@@ -426,6 +426,11 @@
 }
 
 /* PROJECTS TAB */
+.team-container {
+    /* background-color: #263238; */
+    float: right;
+}
+
 .team-member-div {
     display: inline;
 }
@@ -454,4 +459,32 @@
 .links-div .fa {
     padding-right: 10px;
     font-size: 16px;
+}
+
+.tech-pill {
+    background-color: #263238;
+    padding: 0px 3px 0px 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.tech-pill img {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.tech-pill div {
+    display: inline-block;
+    font-family: Catamaran;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0px 5px 0px 5px;
+    vertical-align: middle !important;
+    color: white;
 }

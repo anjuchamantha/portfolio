@@ -125,6 +125,15 @@ function makeProjectItem(item) {
     let git = "<a class=\"url\" href=\"" + item.git + "\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i>" + "Github Repository" + "</a>";
     let links = "<div class=\"links-div\">" + url + git + "</div>"
 
+    let tech_pills_str = "";
+    for (let i = 0; i < item.tech.length; i++) {
+        const tech_name = item.tech[i].name;
+        const tech_img = item.tech[i].img;
+        let tech_item = "<div class=\"tech-pill\"><img src=\"" + tech_img + "\"></img><div>" + tech_name + "</div></div>";
+        tech_pills_str += tech_item;
+    }
+    let tech_pills = "<div class=\"tech-pills-container\">" + tech_pills_str + "</div>";
+
     let team_str = "";
     for (let i = 0; i < item.team.length; i++) {
         const member = item.team[i];
@@ -140,7 +149,7 @@ function makeProjectItem(item) {
         detail +
         "</div ></a>"
 
-    let section = "<section class=\"item\">" + name + links + team + img + "</section>"
+    let section = "<section class=\"item\">" + name + tech_pills + links + team + img + "</section>"
     return section;
 }
 
