@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Cellyzer – CDR Analyzing Library",
+        "img": "data/projects/cellyzer/cellyzer-collage.png",
+        "type": "Sem 5 Project",
+        "date": "Feb - June 2020",
+        "url": "https://pypi.org/project/cellyzer/",
+        "git": "https://github.com/anjuchamantha/cellyzer---CDR-data-analyzer",
+        "tech": [
+            {
+                "name": "Python",
+                "img": "img/logo_icons/icons8-python-100.png"
+            },
+            {
+                "name": "HTML",
+                "img": "img/logo_icons/icons8-html-5-100.png"
+            },
+            {
+                "name": "CSS",
+                "img": "img/logo_icons/icons8-css3-100.png"
+            },
+            {
+                "name": "Dash(py)",
+                "img": "img/logo_icons/dash-logo-300.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Wageesha Bangamuarachchi",
+                "img": "data/people/wageesha.jpg"
+            },
+            {
+                "name": "Dineth Narada",
+                "img": "data/people/dineth_narada.jpg"
+            },
+            {
+                "name": "Malith Aththanayake",
+                "img": "data/people/malith_aththanayake.jpg"
+            }
+        ],
+        "detail": "Cellyzer is a python library to analyze CDR (Call Details Records) data and visualize them using the Cellyzer GUI. It can handle call records, message records and cell (antenna) records. This is a Software Engineering group project done in 5th semester."
+    }
+]

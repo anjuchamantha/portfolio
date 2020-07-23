@@ -34,7 +34,7 @@
             {
                 "tech": "Dart",
                 "level": "50",
-                "img": ""
+                "img": "img/logo_icons/dart-logo.png"
             },
             {
                 "tech": "C",
@@ -71,7 +71,7 @@
             {
                 "tech": "Dash(py)",
                 "level": "40",
-                "img": ""
+                "img": "img/logo_icons/dash-logo-300.png"
             }
         ],
         "database": [

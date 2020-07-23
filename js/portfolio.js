@@ -32,35 +32,7 @@ function loadJSON(filepath, callback) {
     xobj.send(null);
 }
 
-function makeAchievementItem(item) {
-    let place = "<span title=\"Placement\">" + "<i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>" + item.place + "</span>"
-    let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
-    let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
-    let name = "<h3>" + item.name + place + date + organizer + "</h3>"
-    let detail = "<div class=\"overlay\">" + item.detail + "</div>"
-    let img = "<a href=\"" + item.img + "\">" +
-        "<div class=\"item-img\" >" +
-        "<img class=\"image\" src=\"" + item.img + "\">" +
-        detail +
-        "</div ></a>"
-    let section = "<section class=\"item\">" + name + img + "</section>"
-    return section;
-}
-function makeEducationItem(item) {
-    let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
-    let name = "<h3>" + item.institute + date + "</h3>"
-    let programs = "";
-    for (let i = 0; i < item.programs.length; i++) {
-        const program = item.programs[i];
-        let grade = "<span class=\"item-li-span\">" + item.grades[i] + "</span>";
-        let detail = "<div class=\"item-li-detail\">" + item.details[i] + "</div>";
-        let program_li = "<li>" + "<a target=\"_blank\" href=\"" + item.certificates[i] + "\">" + program + "</a>" + grade + detail + "</li>";
-        programs += program_li;
-    }
-    let programs_div = "<div class=\"item-detail\"><ul>" + programs + "</ul></div>";
-    let section = "<section class=\"item item-education\">" + name + programs_div + "</section>";
-    return section;
-}
+// ABOUT TAB PAGE
 function makeAboutItem(item) {
     let name = "<h3>" + item.name + "<span class=\"title-span\">" + item.title + "</span>" + "</h3>";
     let contact_div = "<div class=\"contact\"> <ul>" +
@@ -77,6 +49,7 @@ function makeAboutItem(item) {
     let section = "<section class=\"item item-about\">" + about + "</section>";
     return section;
 }
+
 function makeTechnicalItem(item) {
     let languages = item.technical.languages;
     let web = item.technical.web;
@@ -111,6 +84,66 @@ function makeTechnicalItem(item) {
     return section;
 }
 
+// EDUCATION TAB PAGE
+function makeEducationItem(item) {
+    let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
+    let name = "<h3>" + item.institute + date + "</h3>"
+    let programs = "";
+    for (let i = 0; i < item.programs.length; i++) {
+        const program = item.programs[i];
+        let grade = "<span class=\"item-li-span\">" + item.grades[i] + "</span>";
+        let detail = "<div class=\"item-li-detail\">" + item.details[i] + "</div>";
+        let program_li = "<li>" + "<a target=\"_blank\" href=\"" + item.certificates[i] + "\">" + program + "</a>" + grade + detail + "</li>";
+        programs += program_li;
+    }
+    let programs_div = "<div class=\"item-detail\"><ul>" + programs + "</ul></div>";
+    let section = "<section class=\"item item-education\">" + name + programs_div + "</section>";
+    return section;
+}
+
+function makeAchievementItem(item) {
+    let place = "<span title=\"Placement\">" + "<i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>" + item.place + "</span>"
+    let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
+    let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
+    let name = "<h3>" + item.name + place + date + organizer + "</h3>"
+    let detail = "<div class=\"overlay\">" + item.detail + "</div>"
+    let img = "<a href=\"" + item.img + "\">" +
+        "<div class=\"item-img\" >" +
+        "<img class=\"image\" src=\"" + item.img + "\">" +
+        detail +
+        "</div ></a>"
+    let section = "<section class=\"item\">" + name + img + "</section>"
+    return section;
+}
+
+//PROJECTS TAB PAGE
+function makeProjectItem(item) {
+    let place = "<span title=\"Type\">" + "<i class=\"fa fa-laptop\" aria-hidden=\"true\"></i>" + item.type + "</span>"
+    let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
+    let name = "<h3>" + item.name + place + date + "</h3>";
+    let url = "<a class=\"url\" href=\"" + item.url + "\"><i class=\"fa fa-link\" aria-hidden=\"true\"></i>" + "Project URL" + "</a>";
+    let git = "<a class=\"url\" href=\"" + item.git + "\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i>" + "Github Repository" + "</a>";
+    let links = "<div class=\"links-div\">" + url + git + "</div>"
+
+    let team_str = "";
+    for (let i = 0; i < item.team.length; i++) {
+        const member = item.team[i];
+        let member_img = "<div title=\"" + member.name + "\" class=\"team-member-div\"><img class=\"team-member\" src=\"" + member.img + "\">" + "</div>";
+        team_str += member_img;
+    }
+    let team = "<div class=\"team-container\">" + team_str + "</div>";
+
+    let detail = "<div class=\"overlay\">" + item.detail + "</div>"
+    let img = "<a href=\"" + item.img + "\">" +
+        "<div class=\"item-img\" >" +
+        "<img class=\"image\" src=\"" + item.img + "\">" +
+        detail +
+        "</div ></a>"
+
+    let section = "<section class=\"item\">" + name + links + team + img + "</section>"
+    return section;
+}
+
 function displaySection(items, element) {
     let sec = "";
     if (element == "about") {
@@ -126,17 +159,22 @@ function displaySection(items, element) {
                 case "education":
                     sec += makeEducationItem(items[i]);
                     break;
+                case "projects":
+                    sec += makeProjectItem(items[i]);
+                    break;
             }
         }
     }
     document.getElementById(element).innerHTML = sec;
 }
 
-
-
-
 // show first panel when page loads
-showPanel(0);
+showPanel(3);
+loadJSON('data/about.json', function (response) {
+    // Parse JSON string into object
+    var items = JSON.parse(response);
+    displaySection(items, "about")
+});
 
 loadJSON('data/achievements.json', function (response) {
     // Parse JSON string into object
@@ -149,8 +187,9 @@ loadJSON('data/education.json', function (response) {
     var items = JSON.parse(response);
     displaySection(items, "education")
 });
-loadJSON('data/about.json', function (response) {
+
+loadJSON('data/projects.json', function (response) {
     // Parse JSON string into object
     var items = JSON.parse(response);
-    displaySection(items, "about")
+    displaySection(items, "projects")
 });

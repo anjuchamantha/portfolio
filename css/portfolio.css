@@ -333,8 +333,9 @@
     margin: 10px 10px 0px 0px;
     border: rgba(17, 17, 17, 0.041) solid 2px;
     border-radius: 15px;
-    text-align: center;
-
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -349,7 +350,7 @@
     max-height: calc(100% - 20px);
     margin: 10px;
 
-    z-index: 1;
+    z-index: -1;
     transition: transform 0.5s ease;
 }
 
@@ -422,4 +423,35 @@
         opacity: 0.85;
         transition: opacity 0.5s;
     }
+}
+
+/* PROJECTS TAB */
+.team-member-div {
+    display: inline;
+}
+
+.team-member {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px 0px 10px 8px;
+}
+
+.links-div {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.116);
+}
+
+.links-div .url {
+    display: block;
+    color: #111;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: Catamaran;
+}
+
+.links-div .fa {
+    padding-right: 10px;
+    font-size: 16px;
 }
