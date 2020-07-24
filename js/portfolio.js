@@ -46,7 +46,7 @@ function makeAboutItem(item) {
     let profile_pic = "<div class=\"profile-pic-container\"><img class=\"profile-pic\" src=\"" + item.profile_pic + "\">" + "</div>";
 
     let about = "<div class=\"about\">" + profile_pic + profile_content + "</div>";
-    let section = "<section class=\"item item-about\">" + about + "</section>";
+    let section = "<section class=\"item item-about\" id=\"about\">" + about + "</section>";
     return section;
 }
 
@@ -80,7 +80,7 @@ function makeTechnicalItem(item) {
 
     }
     let section_name = "<h2 class=\"about\">" + "Technical Skills" + "</h2>";
-    let section = "<section class=\"item item-technical\">" + section_name + tech_content + "</section>";
+    let section = "<section class=\"item item-technical\" id=\"tech-skills\">" + section_name + tech_content + "</section>";
     return section;
 }
 
@@ -97,7 +97,7 @@ function makeEducationItem(item) {
         programs += program_li;
     }
     let programs_div = "<div class=\"item-detail\"><ul>" + programs + "</ul></div>";
-    let section = "<section class=\"item item-education\">" + name + programs_div + "</section>";
+    let section = "<section class=\"item item-education\" id=\"education\">" + name + programs_div + "</section>";
     return section;
 }
 
@@ -131,7 +131,7 @@ function makeAchievementItem(item) {
             detail +
             "</div ></a>"
     }
-    let section = "<section class=\"item\">" + name + img + "</section>"
+    let section = "<section class=\"item\" id=\"achievements\">" + name + img + "</section>"
     return section;
 }
 
@@ -187,7 +187,7 @@ function makeProjectItem(item) {
     }
     let team_links_div = "<div class=\"team-links-div\">" + links + team + "</div>"
 
-    let section = "<section class=\"item\">" + name + tech_pills + team_links_div + img + "</section>"
+    let section = "<section class=\"item\" id=\"projects\">" + name + tech_pills + team_links_div + img + "</section>"
     return section;
 }
 
