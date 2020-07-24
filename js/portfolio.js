@@ -121,6 +121,7 @@ function makeAchievementItem(item) {
 
     }
     else {
+        let detail = "<div class=\"overlay\">" + item.detail + "</div>";
         img = "<a href=\"" + item.img + "\">" +
             "<div class=\"item-img\" >" +
             "<img class=\"image\" src=\"" + item.img + "\">" +
