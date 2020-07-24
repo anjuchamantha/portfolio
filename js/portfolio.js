@@ -105,11 +105,13 @@ function makeAchievementItem(item) {
     let place = "<span title=\"Placement\">" + "<i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>" + item.place + "</span>"
     let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
     let organizer = "<span title=\"Organizer\">" + "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" + item.organizer + "</span>"
-    let name = "<h3>" + item.name + place + date + organizer + "</h3>"
+
 
     let detail;
     let img;
+    let name;
     if (item.img == "") {
+        name = "<h3 class=\"no-border-bottom\">" + item.name + place + date + organizer + "</h3>"
         if (item.detail == "") {
             detail = "";
             img = "<div class=\"item-img no-img no-overlay\" >" + detail; +"</div>";
@@ -121,6 +123,7 @@ function makeAchievementItem(item) {
 
     }
     else {
+        name = "<h3>" + item.name + place + date + organizer + "</h3>"
         let detail = "<div class=\"overlay\">" + item.detail + "</div>";
         img = "<a href=\"" + item.img + "\">" +
             "<div class=\"item-img\" >" +

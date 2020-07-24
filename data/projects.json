@@ -222,7 +222,7 @@
                 "img": "data/people/kasun.jpg"
             }
         ],
-        "detail": "Small Micromouse robot which goes to the center of an unknown maze with shortest distance. I developed the robot controlling algorithm which is optimized to run in the small memory in STM32"
+        "detail": "A Micromouse robot which goes to the center of an unknown maze with shortest distance. Robot controlling algorithm was optimized to run in the small memory onn STM32"
     },
     {
         "name": "Folk Social Media App [UI]",

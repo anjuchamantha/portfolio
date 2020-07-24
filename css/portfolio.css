@@ -18,6 +18,11 @@
     border-bottom: 1px solid rgba(17, 17, 17, 0.116);
 }
 
+.no-border-bottom {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+}
+
 .item h3 span {
     font-family: Catamaran;
     font-size: 14px;
@@ -31,7 +36,7 @@
 
 .item .item-img {
     width: 100%;
-    min-height: 70px;
+    min-height: 80px;
     position: relative;
     overflow: hidden;
     border-radius: 5px !important;
@@ -57,6 +62,7 @@
 }
 .no-overlay {
     min-height: 0px !important;
+    /* background: white !important; */
 }
 
 .item .image {
@@ -73,6 +79,9 @@
 @media only screen and (min-width: 768px) {
     .no-img .overlay {
         opacity: 0.85 !important;
+        /* background: white !important;
+        color: black;
+        font-weight: 500; */
         /* width: 100%; */
     }
 }
