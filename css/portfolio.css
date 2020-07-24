@@ -30,7 +30,7 @@
 }
 
 .item .item-img {
-    width: calc(100%);
+    width: 100%;
     min-height: 70px;
     position: relative;
     overflow: hidden;
@@ -38,8 +38,10 @@
 }
 
 .overlay {
+    width: calc(100% - 20px);
+
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0);
     position: absolute;
     bottom: 0px;
     opacity: 0.85;
@@ -53,6 +55,10 @@
     text-align: left;
     font-weight: 100;
 }
+.no-overlay {
+    min-height: 0px !important;
+}
+
 .item .image {
     /* max-height: calc(100vh - 300px); */
     width: 100%;
@@ -67,7 +73,7 @@
 @media only screen and (min-width: 768px) {
     .no-img .overlay {
         opacity: 0.85 !important;
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
@@ -91,10 +97,11 @@
         opacity: 0;
         transition: opacity 0.5s ease;
         font-size: 20px;
-        padding: 20px;
+        padding: 20px !important;
         margin-bottom: 0px;
+        width: calc(100% - 40px);
 
-        width: auto !important;
+        /* width: auto !important; */
     }
     .item-img:hover img {
         transform: scale(1.05);
@@ -455,6 +462,7 @@
     width: 50px;
     border-radius: 50%;
     margin: 5px 0px 10px 8px;
+    /* background-color: #263238; */
 }
 
 .links-div {

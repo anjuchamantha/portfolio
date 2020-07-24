@@ -178,5 +178,96 @@
             }
         ],
         "detail": "A robot which can climb stairs with special type of wheels. Built with Arduino microcontroller. Simulated with Solid Works"
+    },
+    {
+        "name": "Micromouse Robot [Algorithm]",
+        "img": "",
+        "type": "SLIT Robofest competition",
+        "date": "Aug 2019",
+        "url": "",
+        "git": "",
+        "tech": [
+            {
+                "name": "STM32",
+                "img": "img/logo_icons/stm32.png"
+            },
+            {
+                "name": "SolidWorks",
+                "img": "img/logo_icons/solidworks.png"
+            },
+            {
+                "name": "C/C++",
+                "img": "img/logo_icons/c.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            },
+            {
+                "name": "Tharaka Wijesundara",
+                "img": "data/people/tharaka_wijesundara.jpg"
+            },
+            {
+                "name": "Thusara Dimuth",
+                "img": "data/people/user.png"
+            },
+            {
+                "name": "Lochana Oshadha",
+                "img": "data/people/lochana.jpg"
+            },
+            {
+                "name": "Kasun Kalhara ",
+                "img": "data/people/kasun.jpg"
+            }
+        ],
+        "detail": "Small Micromouse robot which goes to the center of an unknown maze with shortest distance. I developed the robot controlling algorithm which is optimized to run in the small memory in STM32"
+    },
+    {
+        "name": "Folk Social Media App [UI]",
+        "img": "",
+        "type": "Client Project",
+        "date": "April 2020",
+        "url": "",
+        "git": "https://github.com/anjuchamantha/folk_UIDesign",
+        "tech": [
+            {
+                "name": "Flutter",
+                "img": "img/logo_icons/stm32.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            }
+        ],
+        "detail": "This is a social media mobile application, which is developed for a client. I developed the User Interfaces using Flutter. The App consists of many custom designed UI components"
+    },
+    {
+        "name": "Nano processor simulator",
+        "img": "",
+        "type": "Sem 2 Com.Architecture Project",
+        "date": "Aug - Dec 2018",
+        "url": "",
+        "git": "",
+        "tech": [
+            {
+                "name": "Xilinix Vivado",
+                "img": "img/logo_icons/vivado.jpg"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            },
+            {
+                "name": "Sunera Avinash",
+                "img": "data/people/sunera.jpg"
+            }
+        ],
+        "detail": "Simple Computer Processor Simulation (Group project). Implement the hardware level manipulations of a processor using Xilinx tools."
     }
 ]

@@ -38,5 +38,53 @@
         "date": "Oct 2019",
         "organizer": "Institute of Engineers Sri Lanka",
         "detail": "Idea Challenge is a competition held in the annual exhibition ‘Techno’ at BMICH. This competition was to develop a software solution to prevent diseases. We developed a Dengue prevention app and managed to win 2nd place."
+    },
+    {
+        "name": "Stay Home Coding Challenge 2020",
+        "img": "",
+        "place": "Runners Up",
+        "date": "May 2020",
+        "organizer": "optimizesolutions.lk",
+        "detail": "This competition was held during the lockdown period due to covid-19. It was a 3-hour coding competition where the participants were given a problem to solve."
+    },
+    {
+        "name": "Physics Olympiad, Sri Lanka 2016",
+        "img": "",
+        "place": "Island level - Bronze Medal",
+        "date": "2016",
+        "organizer": "Institute of Physics Sri Lanka",
+        "detail": "Physics Olympiad competition is a worldwide physics examination, and I was able to achieve a bronze medal from Sri Lanka competition."
+    },
+    {
+        "name": "Mathematics Olympiad, Sri Lanka 2012",
+        "img": "",
+        "place": "Zonal 1st",
+        "date": "2012",
+        "organizer": "Sri Lanka Mathematics Olympiad Foundation",
+        "detail": "Participated in Grade 10. Was able to place the first in Kalutara zone."
+    },
+    {
+        "name": "Mathematics Quiz Competition, 2011",
+        "img": "",
+        "place": "Zonal 1st",
+        "date": "2011",
+        "organizer": "",
+        "detail": "Participated in Grade 9. Was able to place the first in Kalutara zone."
+    },
+    {
+        "name": "School Physics Award, 2015 & 2016",
+        "img": "",
+        "place": "School Award",
+        "date": "2015 & 2016",
+        "organizer": "Sri Sumangala College",
+        "detail": ""
+    },
+    {
+        "name": "Best Student of the Year, 2015 & 2016",
+        "img": "",
+        "place": "School Award",
+        "date": "2015 & 2016",
+        "organizer": "Sri Sumangala College",
+        "detail": ""
     }
 ]
