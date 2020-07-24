@@ -121,8 +121,20 @@ function makeProjectItem(item) {
     let place = "<span title=\"Type\">" + "<i class=\"fa fa-laptop\" aria-hidden=\"true\"></i>" + item.type + "</span>"
     let date = "<span title=\"Date\">" + "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>" + item.date + "</span>"
     let name = "<h3>" + item.name + place + date + "</h3>";
-    let url = "<a class=\"url\" href=\"" + item.url + "\"><i class=\"fa fa-link\" aria-hidden=\"true\"></i>" + "Project URL" + "</a>";
-    let git = "<a class=\"url\" href=\"" + item.git + "\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i>" + "Github Repository" + "</a>";
+    let url;
+    let git;
+    if (item.url == "") {
+        url = "";
+    }
+    else {
+        url = "<a class=\"url\" href=\"" + item.url + "\"><i class=\"fa fa-link\" aria-hidden=\"true\"></i>" + "Project URL" + "</a>";
+    }
+    if (item.git == "") {
+        git = "";
+    }
+    else {
+        git = "<a class=\"url\" href=\"" + item.git + "\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i>" + "Github Repository" + "</a>";
+    }
     let links = "<div class=\"links-div\">" + url + git + "</div>"
 
     let tech_pills_str = "";
@@ -142,13 +154,18 @@ function makeProjectItem(item) {
     }
     let team = "<div class=\"team-container\">" + team_str + "</div>";
 
-    let detail = "<div class=\"overlay\">" + item.detail + "</div>"
-    let img = "<a href=\"" + item.img + "\">" +
-        "<div class=\"item-img\" >" +
-        "<img class=\"image\" src=\"" + item.img + "\">" +
-        detail +
-        "</div ></a>"
-
+    let detail = "<div class=\"overlay\">" + item.detail + "</div>";
+    let img;
+    if (item.img == "") {
+        img = "<div class=\"item-img no-img\" >" + detail; +"</div>";
+    }
+    else {
+        img = "<a href=\"" + item.img + "\">" +
+            "<div class=\"item-img\" >" +
+            "<img class=\"image\" src=\"" + item.img + "\">" +
+            detail +
+            "</div ></a>"
+    }
     let team_links_div = "<div class=\"team-links-div\">" + links + team + "</div>"
 
     let section = "<section class=\"item\">" + name + tech_pills + team_links_div + img + "</section>"

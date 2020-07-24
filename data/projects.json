@@ -133,5 +133,50 @@
             }
         ],
         "detail": "We as team-Pulse developed a healthcare services system named MediKit. Goal was to connect the doctor & the patient in a systematic way and let the patient get a readable prescription with a good understanding about the medicines he takes."
+    },
+    {
+        "name": "Stair Climbing Robot",
+        "img": "",
+        "type": "Sem 2 Robotics Project",
+        "date": "Aug - Dec 2018",
+        "url": "",
+        "git": "",
+        "tech": [
+            {
+                "name": "Arduino",
+                "img": "img/logo_icons/arduino.png"
+            },
+            {
+                "name": "SolidWorks",
+                "img": "img/logo_icons/solidworks.png"
+            },
+            {
+                "name": "C/C++",
+                "img": "img/logo_icons/c.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            },
+            {
+                "name": "Sunera Avinash",
+                "img": "data/people/sunera.jpg"
+            },
+            {
+                "name": "Lahiru Udayanga",
+                "img": "data/people/lahiru_udayanga.jpg"
+            },
+            {
+                "name": "Ruchin Amarathunga",
+                "img": "data/people/ruchin.jpg"
+            },
+            {
+                "name": "Amanda Ariyaratne",
+                "img": "data/people/amanda.jpg"
+            }
+        ],
+        "detail": "A robot which can climb stairs with special type of wheels. Built with Arduino microcontroller. Simulated with Solid Works"
     }
 ]
