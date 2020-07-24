@@ -363,7 +363,7 @@
     height: calc((100vw - 80px) / 3);
     width: calc((100vw - 80px) / 3);
     margin: 10px 10px 0px 0px;
-    border: rgba(17, 17, 17, 0.041) solid 2px;
+    border: rgba(17, 17, 17, 0.041) solid 1px;
     border-radius: 15px;
     /* text-align: center; */
     display: flex;
