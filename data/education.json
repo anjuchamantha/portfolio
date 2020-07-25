@@ -60,6 +60,7 @@
         "institute": "Other Courses & Certificates",
         "date": "2019 - PRESENT",
         "programs": [
+            "RESTful API with HTTP and JavaScript",
             "Front-End Frameworks: Bootstrap 4",
             "Introduction to Self-Driving Cars",
             "Google Cloud Platform Infrastructure",
@@ -68,6 +69,7 @@
             "Introduction to packet tracer"
         ],
         "details": [
+            "Coursera - Guided Project",
             "Coursera - Hong Kong University",
             "Coursera - University of Toronto",
             "Coursera - Google Cloud",
@@ -76,6 +78,7 @@
             "Cisco"
         ],
         "certificates": [
+            "https://www.coursera.org/account/accomplishments/certificate/NZ4G8RZH2D3R",
             "https://www.coursera.org/account/accomplishments/certificate/R77XVVDWAPVS",
             "https://www.coursera.org/account/accomplishments/certificate/B7Q5K7LWPZYZ",
             "https://www.coursera.org/account/accomplishments/certificate/BNJA26LQBKZC",
@@ -84,7 +87,8 @@
             "#"
         ],
         "grades": [
-            "Ongoing",
+            "July 2020",
+            "July 2020",
             "June 2020",
             "May 2020",
             "May 2020",
