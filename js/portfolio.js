@@ -3,6 +3,12 @@
 let tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
 let tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
+function route(url) {
+    window.location.href = url;
+    showPanel(2);
+}
+
+
 function showPanel(panelIndex) {
     // change button style when clicked
     tabButtons.forEach(function (node) {

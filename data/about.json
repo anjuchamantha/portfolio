@@ -40,7 +40,9 @@
                 "tech": "C",
                 "level": "40",
                 "img": "img/logo_icons/c.png"
-            },
+            }
+        ],
+        "web": [
             {
                 "tech": "HTML",
                 "level": "85",
@@ -50,13 +52,6 @@
                 "tech": " CSS",
                 "level": "80",
                 "img": "img/logo_icons/css.png"
-            }
-        ],
-        "web": [
-            {
-                "tech": "Flutter",
-                "level": "85",
-                "img": "img/logo_icons/flutter.png"
             },
             {
                 "tech": "Bootstrap",
@@ -69,9 +64,19 @@
                 "img": "img/logo_icons/angularjs.png"
             },
             {
+                "tech": "Django",
+                "level": "30",
+                "img": "img/logo_icons/django.png"
+            },
+            {
                 "tech": "Dash(py)",
                 "level": "40",
                 "img": "img/logo_icons/dash.png"
+            },
+            {
+                "tech": "Flutter",
+                "level": "85",
+                "img": "img/logo_icons/flutter.png"
             }
         ],
         "database": [

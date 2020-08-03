@@ -225,6 +225,43 @@
         "detail": "A Micromouse robot which goes to the center of an unknown maze with shortest distance. Robot controlling algorithm was optimized to run in the small memory onn STM32"
     },
     {
+        "name": "Medical Lab Managing System",
+        "img": "",
+        "type": "Client Project",
+        "date": "Aug 2020",
+        "url": "",
+        "git": "",
+        "tech": [
+            {
+                "name": "Django",
+                "img": "img/logo_icons/django.png"
+            },
+            {
+                "name": "HTML",
+                "img": "img/logo_icons/html.png"
+            },
+            {
+                "name": "CSS",
+                "img": "img/logo_icons/css.png"
+            },
+            {
+                "name": "Bootstrap",
+                "img": "img/logo_icons/bootstrap.png"
+            },
+            {
+                "name": "PostgreSQL",
+                "img": "img/logo_icons/postgresql.png"
+            }
+        ],
+        "team": [
+            {
+                "name": "Anju Chamantha",
+                "img": "data/people/anju.jpg"
+            }
+        ],
+        "detail": "This is a social media mobile application, which is developed for a client. I developed the User Interfaces using Flutter. The App consists of many custom designed UI components"
+    },
+    {
         "name": "Folk Social Media App [UI]",
         "img": "",
         "type": "Client Project",

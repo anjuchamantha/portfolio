@@ -194,7 +194,7 @@ body::after {
 }
 main {
     padding-top: 80px;
-    padding-bottom: 200px;
+    padding-bottom: 180px;
 }
 
 header {
@@ -238,6 +238,10 @@ header nav ul li a {
     font-family: Catamaran;
     font-size: 16px;
     color: #111;
+    font-weight: 500;
+}
+header nav ul li a:hover {
+    color: grey;
 }
 
 header .header-gallery {
@@ -472,7 +476,7 @@ span {
 footer {
     width: calc(100% - 80px);
     padding: 40px 40px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: #111;
     overflow: hidden;
 
