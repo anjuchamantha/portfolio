@@ -225,7 +225,7 @@
         "detail": "A Micromouse robot which goes to the center of an unknown maze with shortest distance. Robot controlling algorithm was optimized to run in the small memory onn STM32"
     },
     {
-        "name": "Medical Lab Managing System",
+        "name": "MediLab-Medical Lab Managing System",
         "img": "",
         "type": "Client Project",
         "date": "Aug 2020",
@@ -259,7 +259,7 @@
                 "img": "data/people/anju.jpg"
             }
         ],
-        "detail": "This is a social media mobile application, which is developed for a client. I developed the User Interfaces using Flutter. The App consists of many custom designed UI components"
+        "detail": "This is a web based system for a Medical Laboratory to manage users and lab reports replacing the old manual system."
     },
     {
         "name": "Folk Social Media App [UI]",
