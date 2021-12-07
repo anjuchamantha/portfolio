@@ -1,5 +1,13 @@
 [
     {
+        "name": "Dean's List - Semesters 1, 4, 5, 6",
+        "img": "",
+        "place": "University",
+        "date": "2017 - 2021",
+        "organizer": "University of Moratuwa",
+        "detail": ""
+    },
+    {
         "name": "HackX Startup Challenge 2019",
         "img": "data/hackx/gallery/teleport_devices1.jpg",
         "place": "Winners",
